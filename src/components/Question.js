@@ -12,8 +12,8 @@ useEffect(() => {
       setTimeRemaining(timeRemaining - 1);
     } else {
       setTimeRemaining(10);
-      onAnswered(false)
     }
+    onAnswered(false)
   }, 1000);
  
   return () => clearTimeout(id);
